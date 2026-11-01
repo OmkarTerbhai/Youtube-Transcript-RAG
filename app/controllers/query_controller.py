@@ -12,6 +12,6 @@ async def accept_query(
       query: str
 ) :
     query_svc = QueryService();
-    res_json = query_svc.find_similar_docs(query=query);
+    res_json = query_svc.answer_query(query=query);
 
     return res_json;

@@ -47,6 +47,8 @@ class Settings(BaseSettings) :
     #Optional RAGAS evaluation
     enable_ragas_evaluation: bool = False
 
+    openrouter_api_key: str = "";
+
 @lru_cache()
 def get_settings() -> Settings :
     """Get the settings for the entire app"""

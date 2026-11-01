@@ -8,7 +8,7 @@ class IngestionService :
 
     def __init__(self):
         self.settings = get_settings();
-        self.document_svc = DocumentService(200, 20);
+        self.document_svc = DocumentService(1000, 200);
         self.vector_store_repo = VectorStoreRepository();
 
     def _save_upload_batch(self, file_pairs: list[tuple[str, bytes]]) -> tuple[str, list[Path]]:
