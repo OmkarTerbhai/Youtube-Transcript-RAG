@@ -1,5 +1,5 @@
 from fastapi import FastAPI;
-from app.controllers import health_controller, ingestion_controller, query_controller;
+from app.controllers import health_controller, ingestion_controller, query_controller, csv_controller;
 
 app = FastAPI()
 
@@ -10,6 +10,7 @@ def hello() -> dict[str, str]:
 app.include_router(health_controller.router);
 app.include_router(ingestion_controller.router);
 app.include_router(query_controller.router);
+app.include_router(csv_controller.router);
 
 
 

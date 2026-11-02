@@ -34,7 +34,6 @@ class QueryService :
                             for d in relevant_facts);
         prompt = (
             "Answer the following question only on the notes provided\n"
-            "If the notes don't contain the answer, say 'No Info found, Sorry!'\n"
             f"Notes: \n{context}\n\n Question: \n\t{query}"
         );
 

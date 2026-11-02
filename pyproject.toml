@@ -25,6 +25,8 @@ dependencies = [
     "ragas==0.3.7",
     "temporalio>=1.8.0",
     "uvicorn[standard]>=0.32.0",
+    "youtube-transcript-api>=1.2.4",
+    "yt-dlp>=2026.10.26",
 ]
 
 [project.scripts]
